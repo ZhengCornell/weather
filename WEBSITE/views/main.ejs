@@ -1,0 +1,137 @@
+<% include partials/header %>
+
+<h1>Weather App!</h1>
+
+<p>Welcome to Weather App</p>
+
+<form action="/" method="POST">
+  <label for="Input Email">Email address</label>
+  <input type="email" name="email" placeholder="email" />
+  <br />
+  <!-- <input type="location" name="location" placeholder="location" /> -->
+  <label for="Input Location">Location :</label>
+  <select type="location" name="location" placeholder="location">
+    <option value="New York City,NY">New York City,NY</option>
+    <option value="Los Angeles,CA">Los Angeles,CA</option>
+    <option value="Houston,TX">Houston,TX</option>
+    <option value="Philadelphia,PA">Philadelphia,PA</option>
+    <option value="Phoenix,AZ">Phoenix,AZ</option>
+
+    <option value="San Antonio,TX">San Antonio,TX</option>
+    <option value="San Diego,CA">San Diego,CA</option>
+    <option value="San Jose,CA">San Jose,CA</option>
+    <option value="Austin,TX">Austin,TX</option>
+    <option value="Jacksonville,FL">Jacksonville,FL</option>
+
+    <option value="Indianapolis,IN">Indianapolis,IN</option>
+    <option value="San Francisco,CA">San Francisco,CA</option>
+    <option value="Columbus,OH">Columbus,OH</option>
+    <option value="Fort Worth,TX">Fort Worth,TX</option>
+    <option value="Charlotte,NC">Charlotte,NC</option>
+
+    <option value="Detroit,MI">Detroit,MI</option>
+    <option value="El Paso,TX">El Paso,TX</option>
+    <option value="Memphis,TN">Memphis,TN</option>
+    <option value="Boston,MA">Boston,MA</option>
+    <option value="Seattle,WA">Seattle,WA</option>
+
+    <option value="Denver,CO">Denver,CO</option>
+    <option value="Washington,DC">Washington,DC</option>
+    <option value="Nashville-Davidson,TN">Nashville-Davidson,TN</option>
+    <option value="Baltimore,MD">Baltimore,MD</option>
+    <option value="Louisville,KY">Louisville,KY</option>
+
+    <option value="Portland,OR">Portland,OR</option>
+    <option value="Oklahoma,OK">Oklahoma,OK</option>
+    <option value="Milwaukee,WI">Milwaukee,WI</option>
+    <option value="Las Vegas,NV">Las Vegas,NV</option>
+    <option value="Albuquerque,NM">Albuquerque,NM</option>
+
+    <option value="Tucson,AZ">Tucson,AZ</option>
+    <option value="Fresno,CA">Fresno,CA</option>
+    <option value="Sacramento,CA">Sacramento,CA</option>
+    <option value="Long Beach,CA">Long Beach,CA</option>
+    <option value="Kansas,MO">Kansas,MO</option>
+
+    <option value="Mesa,AZ">Mesa,AZ</option>
+    <option value="Virginia Beach,VA">Virginia Beach,VA</option>
+    <option value="Atlanta,GA">Atlanta,GA</option>
+    <option value="Colorado Springs,CO">Colorado Springs,CO</option>
+    <option value="Raleigh,NC">Raleigh,NC</option>
+
+    <option value="Omaha,NE">Omaha,NE</option>
+    <option value="Miami,FL">Miami,FL</option>
+    <option value="Oakland,CA">Oakland,CA</option>
+    <option value="Tulsa,OK">Tulsa,OK</option>
+    <option value="Minneapolis,MN">Minneapolis,MN</option>
+
+    <option value="Cleveland,OH">Cleveland,OH</option>
+    <option value="Wichita,KS">Wichita,KS</option>
+    <option value="Arlington,TX">Arlington,TX</option>
+    <option value="New Orleans,LA">New Orleans,LA</option>
+    <option value="Bakersfield,CA">Bakersfield,CA</option>
+
+    <option value="Tampa,FL">Tampa,FL</option>
+    <option value="Honolulu,HI">Honolulu,HI</option>
+    <option value="Anaheim,CA">Anaheim,CA</option>
+    <option value="Aurora,CO">Aurora,CO</option>
+    <option value="Santa Ana,CA">Santa Ana,CA</option>
+
+    <option value="St.Louis,MO">St.Louis,MO</option>
+    <option value="Riverside,CA">Riverside,CA</option>
+    <option value="Corpus Christi,TX">Corpus Christi,TX</option>
+    <option value="Pittsburgh,PA">Pittsburgh,PA</option>
+    <option value="Lexington-Fayette,KY">Lexington-Fayette,KY</option>
+
+    <option value="Anchorage municipality,AK">Anchorage municipality,AK</option>
+    <option value="Stockton,CA">Stockton,CA</option>
+    <option value="Cincinnati,OH">Cincinnati,OH</option>
+    <option value="St.Paul,MN">St.Paul,MN</option>
+    <option value="Toledo,OH">Toledo,OH</option>
+
+    <option value="Newark,NJ">Newark,NJ</option>
+    <option value="Greensboro,NC">Greensboro,NC</option>
+    <option value="Plano,TX">Plano,TX</option>
+    <option value="Henderson,NV">Henderson,NV</option>
+    <option value="Lincoln,NE">Lincoln,NE</option>
+
+    <option value="Buffalo,NY">Buffalo,NY</option>
+    <option value="Fort Wayne,IN">Fort Wayne,IN</option>
+    <option value="Jersey,NJ">Jersey,NJ</option>
+    <option value="Chula Vista,CA">Chula Vista,CA</option>
+    <option value="Orlando,FL">Orlando,FL</option>
+
+    <option value="St.Petersburg,FL">St.Petersburg,FL</option>
+    <option value="Norfolk,VA">Norfolk,VA</option>
+    <option value="Chandler,AZ">Chandler,AZ</option>
+    <option value="Laredo,TX">Laredo,TX</option>
+    <option value="Madison,WI">Madison,WI</option>
+
+    <option value="Durham,NC">Durham,NC</option>
+    <option value="Lubbock,TX">Lubbock,TX</option>
+    <option value="Winston-Salem,NC">Winston-Salem,NC</option>
+    <option value="Garland,TX">Garland,TX</option>
+    <option value="Glendale,AZ">Glendale,AZ</option>
+
+    <option value="Hialeah,FL">Hialeah,FL</option>
+    <option value="Reno,NV">Reno,NV</option>
+    <option value="Baton Rouge,LA">Baton Rouge,LA</option>
+
+    <option value="Irvine,CA">Irvine,CA</option>
+    <option value="Chesapeake,VA">Chesapeake,VA</option>
+    <option value="Irving,TX">Irving,TX</option>
+    <option value="Scottsdale,AZ">Scottsdale,AZ</option>
+    <option value="North Las Vegas,NV">North Las Vegas,NV</option>
+
+    <option value="Fremont,CA">Fremont,CA</option>
+    <option value="Gilbert town,AZ">Gilbert town,AZ</option>
+    <option value="San Bernardino,CA">San Bernardino,CA</option>
+    <option value="Boise,ID">Boise,ID</option>
+    <option value="Birmingham,AL">Birmingham,AL</option>
+  </select>
+  <br />
+  <button>Subscribe!</button>
+</form>
+
+<form action="/run" method="POST"><button>SEND!</button></form>
+<% include partials/footer %>
