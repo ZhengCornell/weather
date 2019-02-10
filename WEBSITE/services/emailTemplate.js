@@ -1,3 +1,5 @@
+// This is the template using the email as an input, and build the content
+// based on the email body.
 module.exports = email => {
   return `
   <html>

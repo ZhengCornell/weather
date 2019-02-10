@@ -1,5 +1,4 @@
 var mongoose = require("mongoose");
-// var { Schema } = mongoose;
 
 var emailSchema = mongoose.Schema({
   title: String,
@@ -9,5 +8,4 @@ var emailSchema = mongoose.Schema({
   dateSent: Date
 });
 
-// mongoose.model("emails", emailSchema);
 module.exports = mongoose.model("Email", emailSchema);
